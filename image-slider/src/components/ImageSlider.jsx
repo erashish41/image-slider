@@ -38,6 +38,7 @@ export const ImageSlider = ({url, page=1, limit=5}) => {
     useEffect(() => {
         if(url !== "") fetchImage(url);
     },[url]);
+    // this means if url is not empty it will call fetchImage() method
 
     if(loading) {
         return <div>Loading data! Please wait</div>

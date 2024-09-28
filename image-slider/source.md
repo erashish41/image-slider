@@ -21,7 +21,9 @@
         if(url !== "") fetchImage();
     },[])
 - When the dependency array is empty [], the useEffect behaves like componentDidMount. 
-- useEffect(() => {}, []) = componentDidMount: Runs only once when the component mounts.
+- this means if url is not empty it will call fetchImage() method
+
+- useEffect(() => {}, []) =  Runs only once when the component mounts.
 - useEffect(() => {}, [url]) = Runs on mount and whenever url changes: Executes both when 
     the component mounts and whenever the value of url changes.
 
